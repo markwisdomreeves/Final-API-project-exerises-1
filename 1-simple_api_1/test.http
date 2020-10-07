@@ -1,0 +1,62 @@
+
+
+#### GET REQUEST: GET ALL PRODUCTS
+GET http://localhost:5000/api/products
+
+
+#### POST REQUEST: CREATE A SINGLE PRODUCT
+POST  http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "product_id": "5",
+    "title": "First Post",
+    "images": [
+        "https://www.upsieutoc.com/images/2020/07/18/img1.jpg",
+        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
+        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
+        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg"  
+    ],
+    "description": "Html Tutorial for biginners",
+    "content": "Welcome to CSS Tutorial Course",
+    "colors": [
+        "red", "green", "blue", "yellow", "brown"
+    ],
+    "sizes": [
+        "SM", "M", "L", "XM", "XL", "LX", "XX"
+    ],
+    "price": "105"
+}
+
+
+#### PUT REQUEST: UPDATE A SINGLE PRODUCT
+PUT  http://localhost:5000/api/products/5f5fbe3bf554e12894c8b6e9
+Content-Type: application/json
+
+{
+    "product_id": "4",
+    "title": "First Post 02 Update",
+    "images": [
+        "https://www.upsieutoc.com/images/2020/07/18/img1.jpg",
+        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
+        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
+        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg"  
+    ],
+    "description": "Html",
+    "content": "CSS",
+    "colors": [
+        "red", "green", "blue", "yellow", "brown"
+    ],
+    "sizes": [
+        "SM", "M", "L", "XM", "XL", "LX", "XX"
+    ],
+    "price": "10401234"
+}
+
+
+#### DELETE REQUEST: DELETE A SINGLE PRODUCT
+DELETE  http://localhost:5000/api/products/5f5fbe162006ce3470278d05
+
+
+#### GET REQUEST: GET A SINGLE PRODUCT
+GET http://localhost:5000/api/products/5f5fbe3bf554e12894c8b6e9
